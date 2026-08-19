@@ -165,21 +165,26 @@ export default function Home() {
         <section className="mt-14 space-y-5 border-t border-rule pt-10 text-[16.5px] leading-[1.65] text-ink sm:mt-16">
           <p>
             Shayon Sengupta is General Partner and Co-Head of Venture at
-            Multicoin Capital. He joined in the firm’s early years, around
-            2021. He was named Investment Partner in March 2023 and promoted to
-            General Partner and Co-Head of Venture in March 2026.
+            Multicoin Capital. He joined in 2021 and was named Investment
+            Partner in March 2023 and promoted to General Partner and Co-Head
+            of Venture in March 2026.
           </p>
           <p>
-            He works across public and private markets. Alongside Spencer
+            He works across public and private markets. In public markets he
+            drives thesis formation, asset coverage, and on-chain diligence.
+            In private markets he identifies, sources, and leads deals across
+            DePIN, compute, and on-chain infrastructure, and helps drive
+            portfolio strategy across the firm’s funds. Alongside Spencer
             Applebaum and Tushar Jain, he was a primary author of the firm’s
             updated 2026 investment thesis. His writing covers on-chain market
             microstructure, internet labor markets, and decentralized physical
             infrastructure.
           </p>
           <p>
-            Previously he worked at Abodewell, a quantitative market maker in
-            residential real estate, and on the Strategy and Business
-            Development team at SAP.
+            He studied Mathematics at the University of Chicago. Previously he
+            worked at Abodewell, a quantitative market maker in residential
+            real estate, and on the Strategy and Business Development team at
+            SAP. He speaks regularly on podcasts and at industry events.
           </p>
         </section>
 
