@@ -1,37 +1,4 @@
-import Image from "next/image";
-
-const investments = [
-  {
-    name: "Hyperliquid",
-    href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
-    text: "HYPE is a large position in Multicoin’s liquid fund. Sengupta co-authored the public analysis published on June 25, 2026. He was instrumental in the investment.",
-  },
-  {
-    name: "Jito",
-    href: "https://multicoin.capital/2025/03/04/jito-asset-report/",
-    text: "Multicoin has a significant position in JTO across its hedge and venture funds. Sengupta co-authored the public asset report published on March 4, 2025. He was instrumental in the investment.",
-  },
-  {
-    name: "io.net",
-    href: "https://multicoin.capital/2024/03/05/building-the-internet-of-gpus/",
-    text: "On March 5, 2024, Multicoin announced that it led the seed and participated in the Series A. Sengupta wrote the announcement.",
-  },
-  {
-    name: "Geodnet",
-    href: "https://multicoin.capital/2025/02/25/where-are-all-the-robots/",
-    text: "On February 25, 2025, Multicoin led an $8 million strategic acquisition of GEOD. Sengupta wrote the announcement. He was instrumental in the investment.",
-  },
-  {
-    name: "Pyth",
-    href: "https://multicoin.capital/2023/12/14/oracles-and-the-new-frontier-for-application-owned-orderflow-auctions/",
-    text: "On December 14, 2023, Multicoin announced its investment in Pyth Network. Sengupta wrote the announcement.",
-  },
-  {
-    name: "Solana",
-    href: "https://multicoin.capital/2025/01/22/the-solana-thesis-internet-capital-markets/",
-    text: "Multicoin has been investing in SOL and the Solana ecosystem since the seed round in May 2018. Sengupta was instrumental in the investment.",
-  },
-];
+import { SiteChrome } from "./site-chrome";
 
 const writing = [
   {
@@ -65,9 +32,19 @@ const writing = [
     href: "https://multicoin.capital/2026/02/06/multicoin-capitals-investment-thesis/",
   },
   {
+    title: "New Modalities for Issuance and Trading",
+    date: "June 26, 2025",
+    href: "https://multicoin.capital/2025/06/26/new-modalities-for-issuance-and-trading/",
+  },
+  {
     title: "Jito (JTO) Asset Report",
     date: "March 4, 2025",
     href: "https://multicoin.capital/2025/03/04/jito-asset-report/",
+  },
+  {
+    title: "Where Are All The Robots?",
+    date: "February 25, 2025",
+    href: "https://multicoin.capital/2025/02/25/where-are-all-the-robots/",
   },
   {
     title: "Inverting The Human-Agent Relationship",
@@ -75,9 +52,69 @@ const writing = [
     href: "https://multicoin.capital/2025/01/30/inverting-the-human-agent-relationship/",
   },
   {
+    title: "The Great Energy Coordination Problem",
+    date: "September 12, 2024",
+    href: "https://multicoin.capital/2024/09/12/the-great-energy-coordination-problem/",
+  },
+  {
     title: "Publisher-Exchanges: Consumer Applications and the Attention Theory of Value",
     date: "March 12, 2024",
     href: "https://multicoin.capital/2024/03/12/publisher-exchanges-consumer-applications-and-the-attention-theory-of-value/",
+  },
+  {
+    title: "Building The Internet of GPUs",
+    date: "March 5, 2024",
+    href: "https://multicoin.capital/2024/03/05/building-the-internet-of-gpus/",
+  },
+  {
+    title: "Oracles and the New Frontier for Application-Owned Orderflow Auctions",
+    date: "December 14, 2023",
+    href: "https://multicoin.capital/2023/12/14/oracles-and-the-new-frontier-for-application-owned-orderflow-auctions/",
+  },
+  {
+    title: "Exploring The Design Space Of DePIN Networks",
+    date: "September 21, 2023",
+    href: "https://multicoin.capital/2023/09/21/exploring-the-design-space-of-deping-networks/",
+  },
+  {
+    title: "Multiplayer Mode",
+    date: "April 6, 2023",
+    href: "https://multicoin.capital/2023/04/06/multiplayer-mode/",
+  },
+  {
+    title: "The Web3 Growth Stack",
+    date: "January 11, 2023",
+    href: "https://multicoin.capital/2023/01/11/the-web3-growth-stack/",
+  },
+  {
+    title: "Value Flows in the MEV Ecosystem",
+    date: "October 31, 2022",
+    href: "https://multicoin.capital/2022/10/31/value-flows-in-the-mev-ecosystem/",
+  },
+  {
+    title: "Proof of Physical Work",
+    date: "April 5, 2022",
+    href: "https://multicoin.capital/2022/04/05/proof-of-physical-work/",
+  },
+  {
+    title: "The Composable NFT Standard",
+    date: "January 18, 2022",
+    href: "https://multicoin.capital/2022/01/18/the-composable-nft-standard/",
+  },
+  {
+    title: "Rendering the Metaverse",
+    date: "December 21, 2021",
+    href: "https://multicoin.capital/2021/12/21/rendering-the-metaverse/",
+  },
+  {
+    title: "Tokenizing MEV",
+    date: "September 8, 2021",
+    href: "https://multicoin.capital/2021/09/08/tokenizing-mev/",
+  },
+  {
+    title: "THORChain Analysis",
+    date: "February 23, 2021",
+    href: "https://multicoin.capital/2021/02/23/thorchain-analysis/",
   },
   {
     title: "The DeFi Stack",
@@ -86,44 +123,7 @@ const writing = [
   },
 ];
 
-const speaking = [
-  {
-    title: "Crypto’s Rebirth Moment",
-    detail: "Lightspeed, March 10, 2026",
-    href: "https://solana.com/podcasts/lightspeed/episodes/crypto-s-rebirth-moment-tushar-shayon-and-spencer-2026-03-10",
-  },
-  {
-    title: "Internet Labor Market",
-    detail: "Solana Accelerate APAC, Hong Kong, February 11, 2026",
-    href: "https://solana.com/accelerate/hong-kong/agenda",
-  },
-  {
-    title: "Internet Labor Markets",
-    detail: "Multicoin Summit, December 2025",
-    href: "https://www.youtube.com/watch?v=vsg5-oAJvkw",
-  },
-  {
-    title: "The Ultimate Jito Thesis",
-    detail: "Lightspeed, March 28, 2025",
-    href: "https://solana.com/podcasts/lightspeed/episodes/the-ultimate-jito-thesis-shayon-sengupta-2025-03-28",
-  },
-  {
-    title: "ICONs: Inference Via Crypto-Orchestrated Networks",
-    detail: "Multicoin Summit, November 2024",
-    href: "https://multicoin.capital/2024/12/13/highlights-from-the-2024-multicoin-summit/",
-  },
-  {
-    title: "Exploring the Design Space of DePIN Networks",
-    detail: "Multicoin Summit, September 2023",
-    href: "https://multicoin.capital/2023/10/06/discussions-from-the-2023-multicoin-summit/",
-  },
-];
-
 const contacts = [
-  {
-    label: "Press and speaking",
-    email: "johnrobert@multicoin.capital",
-  },
   {
     label: "Investment inquiries",
     email: "ir@multicoin.capital",
@@ -136,214 +136,91 @@ const contacts = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <div className="h-px bg-gold" />
+    <SiteChrome>
+      <section>
+        <p className="mb-4">
+          I’m General Partner and Co-Head of Venture at Multicoin Capital. I
+          joined in 2021 and helped grow our AUM into the billions.
+        </p>
+        <p className="mb-4">
+          I work across public and private markets. In public markets I drive
+          thesis formation, asset coverage, and on-chain diligence. In private
+          markets I identify, source, and lead deals across DePIN, compute, and
+          on-chain infrastructure, and help drive portfolio strategy across the
+          firm’s funds. I was one of the key architects of the firm’s updated
+          2026 investment thesis.
+        </p>
+        <p className="mb-4">
+          I studied Mathematics at the University of Chicago. Previously I
+          worked at Abodewell, a quantitative market maker in residential real
+          estate, and on the Strategy and Business Development team at SAP. I
+          speak regularly on podcasts and at industry events.
+        </p>
+      </section>
 
-      <div className="mx-auto max-w-[760px] px-6 pb-20 pt-12 sm:px-8 sm:pt-16">
-        <header className="flex flex-col gap-8 sm:flex-row sm:items-end sm:gap-12">
-          <Image
-            src="/shayon.jpg"
-            alt="Shayon Sengupta"
-            width={700}
-            height={700}
-            priority
-            className="h-[200px] w-[200px] shrink-0 border border-rule object-cover object-top"
-          />
-          <div className="pb-0.5">
-            <h1 className="font-serif text-[2.15rem] font-medium leading-[1.15] tracking-tight text-ink sm:text-[2.55rem]">
-              Shayon Sengupta
-            </h1>
-            <p className="mt-4 font-serif text-[1.25rem] font-normal leading-snug text-ink">
-              General Partner &amp; Co-Head of Venture
-            </p>
-            <p className="mt-1 font-serif text-[1.05rem] font-normal text-mute">
-              Multicoin Capital
-            </p>
-          </div>
-        </header>
-
-        <section className="mt-14 space-y-5 border-t border-rule pt-10 text-[16.5px] leading-[1.65] text-ink sm:mt-16">
-          <p>
-            Shayon Sengupta is General Partner and Co-Head of Venture at
-            Multicoin Capital. He joined in 2021 and was named Investment
-            Partner in March 2023 and promoted to General Partner and Co-Head
-            of Venture in March 2026.
-          </p>
-          <p>
-            He works across public and private markets. In public markets he
-            drives thesis formation, asset coverage, and on-chain diligence.
-            In private markets he identifies, sources, and leads deals across
-            DePIN, compute, and on-chain infrastructure, and helps drive
-            portfolio strategy across the firm’s funds. Alongside Spencer
-            Applebaum and Tushar Jain, he was a primary author of the firm’s
-            updated 2026 investment thesis. His writing covers on-chain market
-            microstructure, internet labor markets, and decentralized physical
-            infrastructure.
-          </p>
-          <p>
-            He studied Mathematics at the University of Chicago. Previously he
-            worked at Abodewell, a quantitative market maker in residential
-            real estate, and on the Strategy and Business Development team at
-            SAP. He speaks regularly on podcasts and at industry events.
-          </p>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
-            Selected investments
-          </h2>
-          <ul className="mt-7 space-y-7">
-            {investments.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[15px] font-medium text-ink hover:text-navy"
-                >
-                  {item.name}
-                </a>
-                <p className="mt-1.5 text-[15px] leading-relaxed text-mute">
-                  {item.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
-            He was instrumental in several of the firm’s investments, including
-            Dune, Drift, Fuse, fun.xyz, Geodnet, Helium, Hyperliquid, Jito,
-            Kamino, LI.FI, Render, Sei, and Solana. The firm’s full list of
-            investments is on the{" "}
-            <a
-              href="https://multicoin.capital/portfolio/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-rule underline-offset-[0.18em] hover:text-navy"
-            >
-              portfolio page
-            </a>
-            .
-          </p>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
-            Writing
-          </h2>
-          <ul className="mt-5">
-            {writing.map((item) => (
-              <li key={item.href} className="border-b border-rule first:border-t">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-baseline justify-between gap-6 py-3.5 text-[15px] text-ink hover:text-navy"
-                >
-                  <span className="leading-snug">{item.title}</span>
-                  <span className="shrink-0 tabular-nums text-mute">
-                    {item.date}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
-            Speaking
-          </h2>
-          <ul className="mt-5">
-            {speaking.map((item) => (
-              <li
-                key={item.title + item.detail}
-                className="border-b border-rule first:border-t"
-              >
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col gap-0.5 py-3.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
-                >
-                  <span className="text-[15px] leading-snug text-ink hover:text-navy">
-                    {item.title}
-                  </span>
-                  <span className="shrink-0 text-[13.5px] text-mute">
-                    {item.detail}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
-            Contact
-          </h2>
-          <div className="mt-7 grid gap-8 sm:grid-cols-3">
-            {contacts.map((item) => (
-              <a key={item.email} href={`mailto:${item.email}`} className="group">
-                <p className="text-[13px] text-mute">
-                  {item.label}
-                </p>
-                <p className="mt-2 text-[14.5px] text-ink group-hover:underline">
-                  {item.email}
-                </p>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <footer className="mt-20 border-t border-rule pt-8">
-          <div className="flex items-center justify-between text-[13.5px] text-mute">
-            <a
-              href="https://multicoin.capital/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-navy"
-            >
-              Multicoin Capital
-            </a>
-            <div className="flex gap-6">
-              <a
-                href="https://x.com/shayonsengupta"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-navy"
-              >
-                X
-              </a>
-              <a
-                href="https://www.linkedin.com/in/shayon-sengupta-5496aa158/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-navy"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
-          <div className="mt-4 flex gap-4 text-[12px] text-mute/70">
-            <a
-              href="https://multicoin.capital/terms/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-mute"
-            >
-              Terms
-            </a>
-            <a
-              href="https://multicoin.capital/disclosures/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-mute"
-            >
-              Disclosures
-            </a>
-          </div>
-        </footer>
+      <div className="mb-2 mt-4 flex gap-4 text-[0.9rem]">
+        <a href="https://x.com/shayonsengupta" target="_blank" rel="noopener noreferrer">
+          X
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shayon-sengupta-5496aa158/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a href="https://multicoin.capital/" target="_blank" rel="noopener noreferrer">
+          Multicoin
+        </a>
       </div>
-    </div>
+
+      <section id="writing">
+        <p
+          className="mb-4 mt-10 text-[0.85rem] font-semibold uppercase tracking-[0.05em]"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          Writing
+        </p>
+        <ul>
+          {writing.map((item) => (
+            <li key={item.href} className="mb-6">
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[1.1rem] font-medium no-underline"
+                style={{ fontFamily: "var(--font-newsreader), Newsreader, serif" }}
+              >
+                {item.title}
+              </a>
+              <p className="mt-0.5 text-[0.85rem]" style={{ color: "var(--text-secondary)" }}>
+                {item.date}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="contact" className="mt-16 border-t pt-10" style={{ borderColor: "var(--border)" }}>
+        <h2
+          className="text-[1.35rem] font-medium tracking-tight"
+          style={{ fontFamily: "var(--font-newsreader), Newsreader, serif", color: "var(--text)" }}
+        >
+          Contact
+        </h2>
+        <div className="mt-7 grid gap-8 sm:grid-cols-3">
+          {contacts.map((item) => (
+            <a key={item.email} href={`mailto:${item.email}`} className="group no-underline">
+              <p className="text-[13px]" style={{ color: "var(--text-secondary)" }}>
+                {item.label}
+              </p>
+              <p className="mt-2 text-[14.5px] group-hover:underline" style={{ color: "var(--text)" }}>
+                {item.email}
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+    </SiteChrome>
   );
 }
