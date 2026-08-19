@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Geist, Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,6 +14,12 @@ const newsreader = Newsreader({
   variable: "--font-newsreader",
   weight: ["400", "500"],
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -48,10 +54,8 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
-      <body className={`${inter.variable} ${newsreader.variable} antialiased`}>
-        <div className="new-shell">
-          <div className="new-shell-inner">{children}</div>
-        </div>
+      <body className={`${inter.variable} ${newsreader.variable} ${geist.variable} antialiased`}>
+        {children}
       </body>
     </html>
   );
