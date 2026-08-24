@@ -320,6 +320,9 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <p className="mt-6 text-[13px] text-mute">
+            © 2026 Shayon Sengupta
+          </p>
           <p className="mt-6 text-[12px] leading-relaxed text-mute/70">
             The information contained herein is not an offer to buy or sell any security. The views expressed in speaking engagements are my own and don&apos;t necessarily reflect those of my employer. Inclusion of the links to such engagements does not represent an endorsement of me by the sponsors. Speaking engagements and writings are a sample of complete works.
           </p>
