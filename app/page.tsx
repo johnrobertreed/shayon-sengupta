@@ -88,6 +88,16 @@ const writing = [
 
 const speaking = [
   {
+    title: "Crypto Is the Most Underpriced Opportunity in Tech",
+    detail: "Proof of Coverage, August 10, 2026",
+    href: "https://podcasters.spotify.com/pod/show/proofofcoverage/episodes/Crypto-Is-the-Most-Underpriced-Opportunity-in-Tech--Shayon-Sengupta--Multicoin-Capital-e3n38da",
+  },
+  {
+    title: "Inside One of Crypto's Biggest Funds | Multicoin Capital",
+    detail: "Dealflow, July 23, 2026",
+    href: "https://podcasts.apple.com/us/podcast/dealflow/id1859528286",
+  },
+  {
     title: "Crypto’s Rebirth Moment",
     detail: "Lightspeed, March 10, 2026",
     href: "https://solana.com/podcasts/lightspeed/episodes/crypto-s-rebirth-moment-tushar-shayon-and-spencer-2026-03-10",
