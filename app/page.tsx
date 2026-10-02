@@ -35,6 +35,16 @@ const investments = [
 
 const writing = [
   {
+    title: "The Read Layer for Machine Intelligence",
+    date: "September 29, 2026",
+    href: "https://multicoin.capital/2026/09/29/the-read-layer-for-machine-intelligence/",
+  },
+  {
+    title: "DeFi 2.0",
+    date: "September 24, 2026",
+    href: "https://multicoin.capital/2026/09/24/defi-2-0/",
+  },
+  {
     title: "Hyperliquid (HYPE) Analysis & Valuation",
     date: "June 25, 2026",
     href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
